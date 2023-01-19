@@ -1,0 +1,56 @@
+<html>
+	<body>
+		<p id="p1"></p>
+		
+		Enter 1st num:<input type="textbox" id="t1"><br>
+		Enter 2nd num:<input type="textbox" id="t2"><br>
+		<button id="b2">Calculate Sum</button>
+		<button id="b3">Calculate Difference</button>
+		<button id="b4">Calculate Product</button>
+		<button id="b5">Calculate quotient</button>
+		<button id="b1">Clear</button>
+		<script>
+		
+		function sum()
+			{
+				var tx1=parseInt(document.getElementById("t1").value)
+				var tx2=parseInt(document.getElementById("t2").value)
+				var sum = tx1+tx2
+				document.getElementById("p1").innerHTML="Sum of "+tx1+" and "+tx2+" is "+sum 
+			}
+		function dif()
+			{
+				var tx1=parseInt(document.getElementById("t1").value)
+				var tx2=parseInt(document.getElementById("t2").value)
+				var sub = tx1-tx2
+				document.getElementById("p1").innerHTML="Difference of "+tx1+" and "+tx2+" is "+sub 
+			}
+		function pdt()
+			{
+				var tx1=parseInt(document.getElementById("t1").value)
+				var tx2=parseInt(document.getElementById("t2").value)
+				var pro = tx1*tx2
+				document.getElementById("p1").innerHTML="Product of "+tx1+" and "+tx2+" is "+pro 
+			}
+		function quo()
+			{
+				var tx1=parseInt(document.getElementById("t1").value)
+				var tx2=parseInt(document.getElementById("t2").value)
+				var div = tx1/tx2
+				document.getElementById("p1").innerHTML="Quotient of "+tx1+" and "+tx2+" is "+div
+			}
+			function fun1()
+			{
+				document.getElementById("p1").innerHTML=""
+			}
+			
+			document.getElementById("b2").addEventListener("click",sum)
+			document.getElementById("b3").addEventListener("click",dif)
+			document.getElementById("b4").addEventListener("click",pdt)
+			document.getElementById("b5").addEventListener("click",quo)
+			document.getElementById("b1").addEventListener("click",fun1)
+		</script>
+	</body>
+</html>
+
+            			

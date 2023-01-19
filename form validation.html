@@ -1,0 +1,131 @@
+<html>
+ <head>
+ <title>Registration form</title>
+ </head>
+ <body "background-color=powder blue">
+ <form method="post" name="nm" action="" onsubmit="return validate()">
+ <h1 style="text-align:center">STUDENT REGISTRATION FORM</h1>
+ <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+ <table >
+ 
+	<tr>
+	<th>FIRST NAME:</th>
+	<td><input type="text" name="fname" size="25"><td>
+	</tr>
+	
+    <tr>
+	<th> MIDDLE NAME:</th> 
+	<td><input type="text" name="mname" size="25"><td>
+	<tr>
+	
+	<tr>
+	<th>LAST NAME:</th>
+	<td><input type="text" name="lname" size="25"><br><td>
+	<tr>
+	
+	<tr>
+	<th>DOB:</th>
+	<td><input type="date" date="dob" ><td>
+	</tr>
+	
+	<tr>
+	<th>EMAIL:</th>
+	<td><input type="text" name="mail" size="25"><br><td>
+	<tr>
+
+	<tr>
+	<th>PERMANENT ADDRESS:</th>
+	<td><input type="text" address="address" size="100"><br></td>
+	</tr>
+	
+	<tr>
+	<th>COUNTRY:</th>
+	<td><input type="text" name="country" size="10"><br></td>
+	</tr>
+	
+	<tr>
+	<th> STATE:</th>
+	<td><input type="text" name="state" size="10"><br></td>
+	</tr>
+	
+	<tr>
+	<th>GENDER:</th>
+	<td><input type="radio" name="gender" value="male">Male 
+	<input type="radio" name="gender" value="female">Female</td>
+	</tr>
+	
+	<tr>
+	<th>SSLC PASS OUT YEAR:</th>
+	<td><input type="year" name="year" size="10"><br></td>
+	</tr>
+	
+	<tr>
+	<th>SSLC INSTITUTION:</th>
+	<td><input type="text" name="insti" size="50"><br></td>
+	</tr>
+	
+ 	<tr>
+	<th> COLLEGE:</th>
+	<td><input type="text" name="clg" size="50"><br></td>
+	</tr>
+	
+	<tr>
+	<th> DEPARTMENT:</th>
+	<td><input type="option" name="dep" size="15"><br></td>
+	</tr>
+	
+	<tr>
+	<th> CONTACT NUMBER:</th>
+	<td><input type="text" name="num" size="10"><br></td>
+	</tr>
+
+    <tr>
+	<th style="text-align:center;"><input type="submit" value="submit"</th>
+	</tr>
+	
+ </table>
+ </form>
+ <script>  
+    function validate() {  
+        var fname = document.nm.fname.value;  
+        var lname = document.nm.lname.value;  
+        if (fname== 0 || fname="") {  
+            alert("Name is required");  
+             
+	    else if (fname.value.length <= 2) {  
+            alert("Name is required");  
+             		
+        }  
+        if (lname.value.length <= 0) {  
+            alert("Last Name is required");  
+            lname.focus();  
+            return false;  
+        }  
+		
+		var address = document.reg_form.address;  
+	var gender = document.reg_form.gender;  
+	if (address.value.length <= 0) {  
+		alert("Address is required");  
+		address.focus();  
+		return false;  
+		}  
+	if (gender.value.length <= 0) {  
+		alert("Gender is required");  
+		gender.focus();  
+		return false;  
+           }  
+	if (email.value.length <= 0) {    
+               alert("Email Id is required");    
+               email.focus();    
+               return false;    
+            }    
+    if (mobile.value.length <= 0) {    
+             alert("Mobile number is required");    
+             mobile.focus();    
+             return false;    
+            }   
+    			
+</script>   
+ </body>
+ </html>
+ 

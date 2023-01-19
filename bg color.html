@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<p id="p1"></p>
+		<button id="b4">Change BG</button>
+		<script>
+		function changebg()
+			{
+				document.body.style.backgroundColor=
+				'rgb(' + Math.round(Math.random()*255)+
+				',' + Math.round(Math.random()*255)+
+				',' + Math.round(Math.random()*255)+')'
+				
+			}
+			document.getElementById("b4").addEventListener("click",changebg)
+			</script>
+	</body>
+</html>
